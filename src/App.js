@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { HashRouter, Route } from 'react-router-dom';
+import { render } from 'react-dom';
+import Header from './components/Header';
+import About from './routes/About';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = { time : null };
+
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({ time: new Date().toLocaleTimeString() });
+    }, 1000);
+  }
+
+  render() {
+    return (
+      <HashRouter>
+        <Header />
+        <Route path="/about" component={About} />
+        <span className="time">{ this.state.time }</span>
+      </HashRouter>
+    );
+  }
 }
 
 export default App;

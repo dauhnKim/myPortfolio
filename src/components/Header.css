@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  font-family: 'Red Rose', cursive;
+  font-size: 17px;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  padding: 60px 100px;
+  line-height: 10px
+}
+header h1 {
+  display: block;
+  font-size: 10px
+}
+header img {
+  width: auto;
+  height: 20px
+}
+header ul {
+   list-style:none;
+   list-style-type:none;
+}
+header li {
+  display: block;
+  float: left;
+}
+header li a {
+  display: block;
+  padding: 0 2vw
+}
+.last_a {
+  padding-right: 0
+}
+@media (max-width: 896px) {
+  .header {
+    padding: 20px;
+  }
+}

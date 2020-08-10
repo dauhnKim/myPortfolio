@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Taviraj:wght@400;600&display=swap');
+
+h1 {
+  font-family: 'Taviraj', serif;
+  font-size: 70px
+}
+main {
+  position: relative;
+  height: 700px;
+}
+.about_container {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 100px;
+}
+.about_img {
+  float: left;
+  width: 30%;
+}
+.about_img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center center;
+}
+.about_contents {
+  float: left;
+  padding-left: 50px;
+}
+h2 {
+  font-family: 'Taviraj', serif;
+  font-weight: 400;
+  margin-bottom: 15px
+}
+.about_contents p {
+  line-height: 1.7;
+  margin-bottom: 60px
+}
+@media (max-width: 896px) {
+  main {
+    position: relative;
+    width: 100%;
+  }
+  .about_container {
+    padding-top: 0
+  }
+  .about_img {
+    width: 60vw;
+    margin: auto
+  }
+  .about_img img {
+    width: 100%;
+    height: 85vw;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
