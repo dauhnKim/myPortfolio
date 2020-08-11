@@ -1,0 +1,46 @@
+.work_main {
+
+}
+.work_container {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%
+}
+.work_container h1 {
+  padding: 0 100px;
+}
+.work_container h2 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px
+}
+.work_container a {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+.work_container a:hover {
+  background-color: #000;
+  color: #fff
+}
+.work_explain {
+  margin: 0 100px;
+  margin-top:10%
+}
+
+@media (max-width: 896px) {
+  .work_container h1 {
+    padding: 0 35px;
+    margin-left: 10%
+  }
+  .work_container h2 {
+    margin-top: 80px;
+    font-size: 50px;
+  }
+  .work_container a, .work_explain {
+    text-align: center;
+  }
+  .work_explain {
+    margin-top:20%
+  }
+}

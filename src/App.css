@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Taviraj:wght@300;400;600&display=swap');
+
+::selection {
+  color: white;
+  background-color: black;
+}
+/* Hidden Scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .time {
   position: fixed;
   bottom: 80px;
@@ -5,4 +19,19 @@
   background: #000;
   color: #fff;
   padding: 0px 3px
+}
+
+
+@media (max-width: 896px) {
+  .time {
+    bottom: 60px;
+    right: 38px
+  }
+  .home_contents {
+    padding: 0 35px
+  }
+  .title {
+    font-size: 72px;
+    line-height: 1.1
+  }
 }

@@ -3,7 +3,7 @@ import './About.css';
 import about from './images/about.png';
 function About() {
   return (
-    <main>
+    <main className="about_main">
       <div className="about_container">
           <h1>About</h1>
           <div className="about_img">
@@ -23,7 +23,7 @@ function About() {
               Country — Singapore <br/>
               Movie — Trainwreck <br/>
               Book — Unacknowledged <br/>
-              Language — JavaScript, Spanish and French <br/> 
+              Language — JavaScript, Spanish and French <br/>
             </p>
           </div>
       </div>
