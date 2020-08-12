@@ -57,8 +57,14 @@ section.skl {
     float: none;
     width: 100%;
   }
+  section.edu {
+    margin: 0;
+  }
+  section.exp {
+    margin: 0
+  }
   section.skl {
     width: 100%;
-    margin-right: 0
+    margin: 0
   }
 }
