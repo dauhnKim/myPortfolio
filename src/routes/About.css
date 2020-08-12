@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Taviraj:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Taviraj:wght@200;400;600&display=swap');
 
 h1 {
   font-family: 'Taviraj', serif;
@@ -38,7 +38,6 @@ h2 {
   margin-bottom: 60px
 }
 @media (max-width: 896px) {
-  .about_container h1 { margin-left: 10% }
   main {
     position: relative;
     width: 100%;

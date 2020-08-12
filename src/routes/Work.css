@@ -1,6 +1,4 @@
-.work_main {
 
-}
 .work_container {
   font-family: 'Open Sans', sans-serif;
   width: 100%
@@ -24,14 +22,86 @@
   color: #fff
 }
 .work_explain {
+  position: relative;
+  list-style: none;
   margin: 0 100px;
-  margin-top:10%
+  margin-top:10%;
+  margin-bottom: 18%;
+  display: inline-block;
+  width: 100%
 }
-
+.arrow {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -120px;
+  box-shadow: none;
+  cursor: pointer;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  outline: none;
+  background: none;
+  padding: 0px;
+}
+.arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  transform: translateX(-50%) rotate(-45deg);
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.arrow::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+}
+.work_photo {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 100px;
+}
+.work_photo .description {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+  font-size: 14px
+}
+.work_photo_ul li {
+  width: 30%;
+  display: block;
+  float: left;
+  margin: 0 2.5%;
+  margin-bottom: 80px
+}
+.work_photo_ul li:first-child {
+  margin-left: 0
+}
+.work_photo_ul li:last-child {
+  margin-right: 0
+}
+.work_photo_ul li img {
+  display: block;
+  width: 100%;
+  height: 565px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: solid 1px #000;
+}
 @media (max-width: 896px) {
   .work_container h1 {
     padding: 0 35px;
-    margin-left: 10%
   }
   .work_container h2 {
     margin-top: 80px;
@@ -41,6 +111,24 @@
     text-align: center;
   }
   .work_explain {
-    margin-top:20%
+    margin-top:20%;
+    display: block;
+    width: auto;
+    margin-bottom: 40%;
+  }
+  .arrow {
+    bottom: -120px;
+    margin-left: -20px
+  }
+  .work_photo {
+    padding: 20px 35px 0
+  }
+  .work_photo_ul li {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  .work_photo_ul li img {
+    height: auto
   }
 }

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Taviraj:wght@200;400;600&display=swap');
+
+.contact_main {
+  font-family: 'Taviraj', serif;
+  padding: 0 100px
+}
+.contact_main .mail {
+  font-size: 45px;
+  margin: 60px 0 0
+}
+.contact_main p {
+  font-weight: 200;
+  font-size: 32px;
+}
+@media (max-width: 896px) {
+  .contact_main {
+    padding: 0 35px
+  }
+  .contact_main .mail, .contact_main p {
+    font-size: 2.1rem
+  }
+}

@@ -41,8 +41,8 @@ class Header extends React.Component {
                   <ul className="nav">
                     <li><Link to="/about">ABOUT</Link></li>
                     <li><Link to="/work">WORK</Link></li>
-                    <li><Link to="/">RESUME</Link></li>
-                    <li><Link to="/" className="last_a">CONTACT</Link></li>
+                    <li><Link to="/resume">RESUME</Link></li>
+                    <li><Link to="/contact" className="last_a">CONTACT</Link></li>
                   </ul>
                 </div>
 
@@ -55,8 +55,8 @@ class Header extends React.Component {
                     <ul className="nav">
                       <li><Link to="/about">ABOUT</Link></li>
                       <li><Link to="/work">WORK</Link></li>
-                      <li><Link to="/">RESUME</Link></li>
-                      <li><Link to="/" className="last_a">CONTACT</Link></li>
+                      <li><Link to="/resume">RESUME</Link></li>
+                      <li><Link to="/contact" className="last_a">CONTACT</Link></li>
                     </ul>
                   </div>
                 )}
