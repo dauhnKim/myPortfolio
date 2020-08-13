@@ -73,3 +73,16 @@ section.skl {
     margin: 0
   }
 }
+
+ /* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+ main {
+   position: relative;
+   width: 100%;
+   left: 100px
+ }
+}
+/* IE6,7,9,10 */
+@media screen and (min-width: 640px), screen\9 {
+  main {left: 35px}
+}
