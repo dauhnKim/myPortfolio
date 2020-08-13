@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Taviraj:wght@200;400;600&display=swap');
-
+main {
+  position: relative;
+}
 .contact_main {
   font-family: 'Taviraj', serif;
   padding: 0 100px
