@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Taviraj:wght@200;400;600&display=swap');
 main {
   position: relative;
+  width: 100%;
 }
 .contact_main {
   font-family: 'Taviraj', serif;
@@ -14,24 +15,34 @@ main {
   font-weight: 200;
   font-size: 32px;
 }
-@media (max-width: 896px) {
-  .contact_main {
-    padding: 0 35px
-  }
-  .contact_main .mail, .contact_main p {
-    font-size: 2.1rem
-  }
-}
 
  /* IE10+ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
  main {
    position: relative;
    width: 100%;
-   left: 100px
+   margin-left: 100px
  }
 }
-/* IE6,7,9,10 */
-@media screen and (max-width: 896px), screen\9 {
-  main {left: 35px}
+/* IE6,7,9,10 */s
+@media screen\9 {
+  main {margin-left: 35px}
+}
+
+
+@media (max-width: 896px) {
+  main {
+    padding: 0;
+    left: 0;
+    margin-left: 0
+  }
+  .contact_main {
+    left: 0;
+    margin: 0;
+    padding: 0 35px;
+    width: 80%
+  }
+  .contact_main .mail, .contact_main p {
+    font-size: 2.1rem
+  }
 }

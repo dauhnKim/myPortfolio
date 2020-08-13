@@ -100,8 +100,14 @@
   border: solid 1px #000;
 }
 @media (max-width: 896px) {
+  .work_main {
+    padding: 0;
+    left: 0;
+    margin: 0
+  }
   .work_container h1 {
-    padding: 0 35px;
+    padding: 0;
+    margin-left: 35px
   }
   .work_container h2 {
     margin-top: 80px;
@@ -129,6 +135,6 @@
     margin-bottom: 60px;
   }
   .work_photo_ul li img {
-    height: auto
+    height: auto;
   }
 }

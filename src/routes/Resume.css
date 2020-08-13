@@ -53,24 +53,31 @@ section.skl {
 }
 @media (max-width: 896px) {
   .resume_main {
-    padding: 0 35px
+    left: 0;
+    padding: 0;
+    margin: 0
+  }
+  .resume_container {
+    margin: 0 35px
   }
   section {
     display: block;
     float: none;
     width: 100%;
-    margin: 0;
+    margin: 0
   }
   section.edu {
     margin: 0;
     width: 90%;
+    margin: 0
   }
   section.exp {
+    margin: 0;
     margin: 0
   }
   section.skl {
     width: 100%;
-    margin: 0
+    margin-left: 0
   }
 }
 
@@ -84,5 +91,5 @@ section.skl {
 }
 /* IE6,7,9,10 */
 @media screen and (max-width: 896px), screen\9 {
-  main {left: 35px}
+  main {margin-left: 35px}
 }
