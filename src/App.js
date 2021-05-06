@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { HashRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { render } from 'react-dom';
 import Header from './components/Header';
 import Home from './routes/Home';
@@ -21,14 +21,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <HashRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Header />
           <Route path="/" exact={true} component={Home} />
           <Route path="/about" component={About} />
           <Route path="/work" component={Work} />
           <Route path="/resume" component={Resume} />
           <Route path="/contact" component={Contact} />
-        </HashRouter>
+        </BrowserRoute>
         <span className="time">{ this.state.time }</span>
       </div>
     );
