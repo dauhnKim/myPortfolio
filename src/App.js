@@ -7,7 +7,6 @@ import Work from './routes/Work'
 import About from './routes/About'
 import Resume from './routes/Resume'
 import Contact from './routes/Contact'
-
 import Header from './components/Header'
 import Tooltip from './components/Tooltip'
 
