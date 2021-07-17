@@ -1,38 +1,48 @@
-import React, { Component } from 'react';
-import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
-import { render } from 'react-dom';
-import Header from './components/Header';
-import Home from './routes/Home';
-import About from './routes/About';
-import Work from './routes/Work';
-import Resume from './routes/Resume';
-import Contact from './routes/Contact';
+import React, { useEffect, useState } from 'react'
+import { BrowserRouter, Route } from 'react-router-dom'
+import './App.css'
 
-class App extends Component {
-  state = { time : null };
+import Home from './routes/Home'
+import Work from './routes/Work'
+import About from './routes/About'
+import Resume from './routes/Resume'
+import Contact from './routes/Contact'
 
-  componentDidMount() {
+import Header from './components/Header'
+import Tooltip from './components/Tooltip'
+
+const options = {
+  hour: '2-digit',
+  minute: '2-digit',
+}
+const App = () => {
+  const [time, setTime] = useState(null)
+
+  useEffect(() => {
     setInterval(() => {
-      this.setState({ time: new Date().toLocaleTimeString() });
-    }, 1000);
-  }
+      setTime(new Date().toLocaleTimeString())
+    }, 1000)
+  }, [])
 
-  render() {
-    return (
-      <div>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <Header />
+  console.log(`time`, time)
+
+  return (
+    <div>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Header>
           <Route path="/" exact={true} component={Home} />
           <Route path="/about" component={About} />
           <Route path="/work" component={Work} />
           <Route path="/resume" component={Resume} />
           <Route path="/contact" component={Contact} />
-        </BrowserRoute>
-        <span className="time">{ this.state.time }</span>
-      </div>
-    );
-  }
+        </Header>
+      </BrowserRouter>
+
+      <Tooltip content={new Date()} direction="top">
+        <span className="time">{time}</span>
+      </Tooltip>
+    </div>
+  )
 }
 
-export default App;
+export default App

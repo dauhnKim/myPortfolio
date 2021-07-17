@@ -4,44 +4,53 @@ main {
 }
 .contact_main {
   font-family: 'Taviraj', serif;
-  padding: 0 100px
+  padding: 0 100px;
 }
 .contact_main .mail {
   font-size: 45px;
-  margin: 60px 0 0
+  margin: 60px 0 0;
 }
 .contact_main p {
   font-weight: 200;
   font-size: 32px;
 }
+.contact_main p:last-child {
+  font-size: 28px;
+}
 
- /* IE10+ */
+.contact_main p a:hover {
+  text-decoration: underline;
+}
+
+/* IE10+ */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
- main {
-   position: relative;
-   width: 100%;
-   margin-left: 100px
- }
+  main {
+    position: relative;
+    width: 100%;
+    margin-left: 100px;
+  }
 }
-/* IE6,7,9,10 */s
+/* IE6,7,9,10 */
 @media screen\9 {
-  main {margin-left: 35px}
+  main {
+    margin-left: 35px;
+  }
 }
-
 
 @media (max-width: 896px) {
   main {
     padding: 0;
     left: 0;
-    margin-left: 0
+    margin-left: 0;
   }
   .contact_main {
     left: 0;
     margin: 0;
     padding: 0 35px;
-    width: 80%
+    width: 80%;
   }
-  .contact_main .mail, .contact_main p {
-    font-size: 2.1rem
+  .contact_main .mail,
+  .contact_main p {
+    font-size: 2.1rem;
   }
 }

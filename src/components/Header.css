@@ -7,10 +7,14 @@
 a {
   text-decoration: none;
 }
-.header, button {
+.empty_area {
+  height: 40px;
+}
+.header,
+button {
   font-family: 'Red Rose', cursive;
   font-size: 17px;
-  line-height: 10px
+  line-height: 10px;
 }
 .header {
   display: flex;
@@ -19,19 +23,25 @@ a {
   -webkit-box-align: center;
   align-items: center;
   position: relative;
-  padding: 60px 100px;
+  padding: 20px 100px;
+
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 header h1 {
   display: block;
-  font-size: 10px
+  font-size: 10px;
 }
 header img {
   width: auto;
-  height: 20px
+  height: 20px;
 }
 header ul {
-   list-style:none;
-   list-style-type:none;
+  list-style: none;
+  list-style-type: none;
 }
 header li {
   display: block;
@@ -39,15 +49,18 @@ header li {
 }
 header li a {
   display: block;
-  padding: 0 2vw
+  padding: 0 2vw;
 }
 .last_a {
-  padding-right: 0
+  padding-right: 0;
 }
 header button {
-  display: none
+  display: none;
 }
 @media (max-width: 896px) {
+  .empty_area {
+    height: 0;
+  }
   .header {
     padding: 20px 35px;
   }
@@ -56,7 +69,7 @@ header button {
     background-color: transparent;
     cursor: pointer;
     outline: none;
-    margin-top: 3px
+    margin-top: 3px;
   }
   .dropdown {
     position: absolute;
@@ -76,7 +89,7 @@ header button {
     padding: 10px 3px;
   }
   .last_a {
-    padding-right: 3px
+    padding-right: 3px;
   }
   header li a:hover {
     background-color: rgba(0, 0, 0, 0.14);
@@ -85,6 +98,6 @@ header button {
     display: block;
   }
   .max-screen {
-    display: none
+    display: none;
   }
 }
