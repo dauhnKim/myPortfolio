@@ -11,10 +11,6 @@ import Contact from './routes/Contact'
 import Header from './components/Header'
 import Tooltip from './components/Tooltip'
 
-const options = {
-  hour: '2-digit',
-  minute: '2-digit',
-}
 const App = () => {
   const [time, setTime] = useState(null)
 
@@ -40,7 +36,7 @@ const App = () => {
         content={
           <>
             Hi, there! <br />
-            Don't aske me why I am here. <br />I am just here ;)
+            Don't aske me why I am here. <br />I am just here.
           </>
         }
         direction="top"

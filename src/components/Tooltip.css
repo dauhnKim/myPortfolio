@@ -15,7 +15,7 @@
 /* Absolute positioning */
 .Tooltip-Tip {
   position: fixed;
-  border-radius: 4px;
+  border-radius: 0;
   bottom: 110px;
   right: 100px;
   padding: 6px 10px;
