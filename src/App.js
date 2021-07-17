@@ -22,9 +22,7 @@ const App = () => {
     setInterval(() => {
       setTime(new Date().toLocaleTimeString())
     }, 1000)
-  }, [])
-
-  console.log(`time`, time)
+  }, [time])
 
   return (
     <div>
@@ -38,7 +36,16 @@ const App = () => {
         </Header>
       </BrowserRouter>
 
-      <Tooltip content={new Date()} direction="top">
+      <Tooltip
+        content={
+          <>
+            Hi, there! <br />
+            Don't aske me why I am here. <br />I am just here ;)
+          </>
+        }
+        direction="top"
+        delay="0"
+      >
         <span className="time">{time}</span>
       </Tooltip>
     </div>
